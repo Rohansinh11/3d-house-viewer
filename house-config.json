@@ -1,0 +1,16 @@
+{
+  "project": "Independent conceptual villa recreation",
+  "units": "feet (approximate visual scale)",
+  "plot": {"width": 35.4167, "depth": 49.75, "source": "user-supplied project brief; not survey verified"},
+  "floors": [
+    {"id": "ground", "name": "Ground floor", "elevation": 0, "rooms": ["Living room", "Dining hall", "Kitchen", "Bedroom 1", "Bathroom", "Entrance"]},
+    {"id": "first", "name": "First floor", "elevation": 11.5, "status": "proposed conceptual 2BHK", "rooms": ["Bedroom 2", "Bedroom 3", "Family lounge"]},
+    {"id": "roof", "name": "Roof terrace", "elevation": 23, "rooms": ["Roof terrace", "Stair tower"]}
+  ],
+  "assumptions": [
+    "Exterior geometry is an independent visual approximation from three exterior reference images.",
+    "Interior partition positions, furniture and room dimensions are conceptual and not measured from a supplied plan.",
+    "Stair and collision behavior are simplified; this is not BIM or construction documentation.",
+    "No exact engineering, structural, building-code or construction measurements are certified."
+  ]
+}

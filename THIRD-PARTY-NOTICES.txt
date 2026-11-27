@@ -1,0 +1,3 @@
+This independent recreation does not include the referenced GitHub project's source code, model, textures, or third-party viewer engine. The viewer is implemented with native WebGL and locally authored JavaScript/CSS/HTML. No external runtime library or asset is bundled.
+
+The supplied architectural reference photographs are used only as user-provided visual references. Their reuse rights beyond this conversation are not assessed here.

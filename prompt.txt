@@ -1,0 +1,35 @@
+REUSABLE HOUSE 3D VIEWER + TIINY HOST PUBLISHING BRIEF
+
+FIRST CONVERSATION STEP — ASK WHICH HOUSE
+Before designing, coding or deploying, ask and wait:
+“Would you like to use the existing furnished house template, or create your own 3D house from your plans and requirements?”
+A. Use the existing template house shown in the reference.
+B. Create my own 3D house.
+Do not assume A or require visitors to answer before viewing a completed site.
+
+OPTION A — REFERENCE TEMPLATE
+Use the supplied reference images and any user-authorized template files. The visual reference is a two-storey white neoclassical villa with white plaster, classical pilasters and capitals, triangular pediments, dark-framed windows, white balustrades, an arched entrance porch, roof terrace, paved forecourt and side garden. The described reference plot is 35 ft 5 in × 49 ft 9 in. The intended concept includes a furnished ground floor, proposed 2-bedroom first floor, stairs, double-height dining, front terrace, roof terrace and skylight. Do not copy third-party code or models without a reuse licence or permission. If reuse rights are uncertain, independently recreate from authorized visual references and disclose that interior layout, dimensions and details are conceptual unless measured plans are supplied. Do not substitute screenshots, rotating images, CSS cubes or video for a 3D model.
+
+OPTION B — CUSTOM HOUSE
+Collect only the essential brief: plot/building footprint and units; orientation and setbacks; floor count and floor heights; roof/terrace/balcony/stair/lift needs; rooms and approximate dimensions per floor; door/window locations if known; style/materials/furniture; and whether the user has GLB/glTF, CAD/exported model, 2D plans or only photos/text. Invite floor plans, sketches, PDFs, elevations, reference photos or 3D models. A photo is not a measured plan. Summarize the agreed layout and assumptions before modelling. If dimensions are missing, ask whether a clearly labelled conceptual model is acceptable. Never invent precise construction dimensions. Preserve transforms, scale and materials in supplied GLB/glTF and package local textures. A flat unstructured mesh does not automatically contain room metadata, dimensions, collisions or BIM data. Conceptual visualization is not construction documentation, structural analysis or code certification.
+
+VIEWER FEATURES
+Build a real interactive 3D scene with orbit camera, zoom, pan, soft lighting and shadows. Support exterior orbit; dollhouse cutaway that consistently slices relevant wall materials; true top-down selected-floor plan; floor selector driven by the project configuration; first-person walkthrough with keyboard and mobile movement; room selection and camera focus using actual metadata; front/left/back/right/top camera presets; adjustable wall section height; sun/daylight slider; room-label, furniture and auto-rotation toggles; PNG screenshot export; help and keyboard shortcuts; responsive mobile bottom-sheet controls. Implement only features that genuinely work and label estimates/unknowns honestly.
+
+BRANDING AND TOP BARS
+Browser document title exactly “tiiny host”. Visible app title “tiiny host”. Top bar 1 fixed at y=0, height 34px, dark #0d1117, with only a legible “made with tiiny host” link to https://tiiny.host. Top bar 2 starts at y=34px, height 68px, charcoal #171e28, with a warm amber #f2b84b button labelled exactly “See the prompt”, at least 44px high and high-contrast text. Reserve 102px above the app. Viewer begins at y=102px and is 100dvh minus 102px; resize the viewer to its actual iframe dimensions. Make mobile controls readable.
+
+PROMPT DIALOG
+“See the prompt” opens an accessible labelled dialog, max-width 900px and max-height 88dvh. Put “Copy prompt” and “Close” at the top. Show the entire current recreation prompt in a selectable, read-only, scrollable textarea, including this initial template/custom question and Tiiny Host publishing instructions. Copy all text with visible success/failure feedback and a clipboard fallback. Escape/outside click closes; focus enters the dialog and returns to “See the prompt”. Keep the prompt synchronized with the implementation. Include “Download house template”, “Download editable source” when those bundles exist, and “Open Tiiny Host”.
+
+DEPLOYMENT PACKAGE
+Provide index.html at ZIP root, viewer.html, shell/viewer CSS and JS, prompt.txt, house-config.json or equivalent editable config, third-party notices, and all local dependencies/assets. No node_modules, credentials, source-only build step or remote runtime model fetches. ZIP should be ready to upload without a build command. Keep source editable and separate where useful.
+
+VERIFY BEFORE CLAIMING COMPLETION
+Open the working site and verify model loading, orbit/zoom/pan, exterior/dollhouse/plan, each floor/roof, room selection, furniture/label toggles, walkthrough, screenshot export, responsive controls, both bars, prompt open/scroll/copy/close and local asset loading. Document any limits and assumptions. Never claim untested functions or a published URL.
+
+FINAL REQUIRED STEP — TIINY HOST
+Publish at https://tiiny.host using an authorized Tiiny Host connector or normal browser upload flow; do not use another host. Never invent a connector, login, API call or published address. Do not ask for passwords or verification codes in chat. If sign-in is required, say: “Your website is ready. Please enter your email and complete sign-in or email verification directly on Tiiny Host. After that I can finish publishing, or you can finish the upload yourself.” Do not purchase or upgrade a plan. Upload the ready HTML or ZIP, choose an available link name, publish, open the real Tiiny Host URL, and test it. If tools, authentication or limits prevent publication, attach the ZIP and say clearly that publication was not completed. Give these steps: 1. Download the attached ZIP; do not unzip it. 2. Open https://tiiny.host. 3. Drag the ZIP into the upload area or choose Upload file. 4. Choose a link name. 5. Enter your email and complete sign-in/verification if requested. 6. Click Publish and wait. 7. Open the Tiiny Host link, test it and share it. If updating an existing site, use its update/replace option. If you want assistance completing publication, finish sign-in and confirm when ready.
+
+CURRENT PROJECT IMPLEMENTATION NOTES
+This package is an independent procedural WebGL conceptual recreation from three exterior reference images. It is not the original repository's furnished house model or engine. The exterior massing and facade are stylized approximations; room arrangement, furniture and room dimensions are indicative, not measured or verified against construction drawings. The stated plot dimensions are used as a reference scale only. It has no third-party 3D engine dependency; the WebGL scene is generated locally by viewer.js. Tiiny Host publication has not been performed from this environment.
